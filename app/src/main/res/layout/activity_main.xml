@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.reenamaryputhota.microgolf.MainActivity">
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Start Playing"/>
+    <Button
+        android:id="@+id/restartButton"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Reset Game"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_weight="0.06"
+                android:gravity="center|top"
+                android:text="Player BLUE"
+                android:textColor="#0A0FFF"
+                android:textStyle="italic|bold"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:layout_weight="0.04"
+                android:gravity="center|top"
+                android:text="Response"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:id="@+id/player1"
+                android:layout_weight="0.45"
+                android:gravity="center|top"
+                android:textSize="15dp"
+                android:textColor="#0A0FFF"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:id="@+id/player1Shot"
+                android:layout_weight="0.45"
+                android:gravity="center|top"
+                android:textColor="#0A0FFF"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+
+        <ListView
+            android:layout_weight="0.1"
+            android:id="@+id/listView"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.45"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_weight="0.06"
+                android:gravity="center|top"
+                android:textStyle="italic|bold"
+                android:text="Player RED"
+                android:textSize="20dp"
+                android:textColor="#A1251F"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:layout_weight="0.04"
+                android:gravity="center|top"
+                android:text="Response"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:id="@+id/player2"
+                android:layout_weight="0.45"
+                android:gravity="center|top"
+                android:textSize="15dp"
+                android:textColor="#A1251F"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+            <TextView
+                android:id="@+id/player2Shot"
+                android:layout_weight="0.45"
+                android:gravity="center|top"
+                android:textColor="#A1251F"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
